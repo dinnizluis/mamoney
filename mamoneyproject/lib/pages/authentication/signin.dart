@@ -1,6 +1,5 @@
 import 'package:division/division.dart';
 import 'package:flutter/material.dart';
-import 'package:mamoneyproject/customWidgets/logoDivision.dart';
 
 class SignIn extends StatelessWidget {
   @override
@@ -17,13 +16,25 @@ class SignIn extends StatelessWidget {
           CrendentialsInputDivision(),
           SizedBox(height: 30),
           AuthButtonsDivision(),
-          //botões para logar com google e facebook
           SizedBox(height: 30),
-          BottomImage(),
-          //ícone mamoney [imagem]
+          PigBottomImage(),
         ],
       ),
       ),
+    );
+  }
+}
+
+class LogoDivision extends StatelessWidget {
+  final logoStyle = ParentStyle()
+        ..width(278)
+        ..height(179);
+
+  @override
+  Widget build(BuildContext context) {
+    return Parent(
+      child: Image.asset('assets/maMoneyLogotipo.png'),
+      style: logoStyle
     );
   }
 }
@@ -106,7 +117,7 @@ class AuthButtonsDivision extends StatelessWidget {
   }
 }
 
-class BottomImage extends StatelessWidget {
+class PigBottomImage extends StatelessWidget {
   final imgStyle = ParentStyle()
         ..width(538)
         ..height(256);
