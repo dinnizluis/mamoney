@@ -2,11 +2,11 @@ import 'package:division/division.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class TextInputMaMoney extends StatelessWidget {
+class TextFieldMaMoney extends StatelessWidget {
   final textInputStyle = ParentStyle()..width(309);
   final String label;
 
-  TextInputMaMoney({
+  TextFieldMaMoney({
     Key key, 
     @required this.label,
     }) : super(key: key);
@@ -27,7 +27,11 @@ class TextInputMaMoney extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Parent(
-      child: TextFormField(decoration: getDecoration(label, context)),
+      child: Material(
+          child: TextFormField(
+          decoration: getDecoration(label, context)
+        ),
+      ),
       style: textInputStyle
     );
   }

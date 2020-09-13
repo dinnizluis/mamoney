@@ -1,7 +1,7 @@
 import 'package:division/division.dart';
 import 'package:flutter/material.dart';
-import 'package:mamoneyproject/widgets/ButtonMaMoney.dart';
-import 'package:mamoneyproject/widgets/TextInputMaMoney.dart';
+import 'package:mamoneyproject/widgets/buttonmamoney.dart';
+import 'package:mamoneyproject/widgets/textfieldmamoney.dart';
 
 class SignIn extends StatelessWidget {
   SignIn({ Key key }) : super(key: key);
@@ -13,17 +13,17 @@ class SignIn extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(key: Key('loginAppBar'), title: LogoMaMoney(), backgroundColor: Colors.white,),
       body: Align(
+        key: Key('loginBody'),
         alignment: Alignment.topCenter,
         child: Column(
-        key: Key('loginBody'),
         children: <Widget>[
           SizedBox(height: 80),
-          TextInputMaMoney(key: Key('usernameForm'), label: 'Email'),
+          TextFieldMaMoney(key: Key('usernameForm'), label: 'Email'),
           SizedBox(height: 50),
-          TextInputMaMoney(key: Key('passwordForm'), label: 'Senha'),
+          TextFieldMaMoney(key: Key('passwordForm'), label: 'Senha'),
           SizedBox(height: 30),
           AuthButtonsDivision(key: Key('buttonsContainer')),
-          SizedBox(height: 110),
+          SizedBox(height: 50),
           PigBottomImage(key: Key('bottomLogoImg')),
         ],
       ),

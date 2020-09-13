@@ -7,7 +7,7 @@ class ButtonMaMoney extends StatelessWidget {
 
   ButtonMaMoney({
     Key key, 
-    this.buttonText,
+    @required this.buttonText,
     this.buttonTextColor,
     this.buttonColor,
     }) : super(key: key);
@@ -24,16 +24,18 @@ class ButtonMaMoney extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: 140,
-      child: RaisedButton(
-        onPressed: () => {},
-        child: Text(
-          buttonText, 
-          style: TextStyle(color: getButtonTextColor(context))
-          ), 
-        color: getButtonColor(context),
-        shape: RoundedRectangleBorder(
-          side: BorderSide(color: getButtonTextColor(context), width: 2),
-          borderRadius: BorderRadius.circular(10)
+      child: Material(
+        child: RaisedButton(
+          onPressed: () => {},
+          child: Text(
+            buttonText, 
+            style: TextStyle(color: getButtonTextColor(context))
+            ), 
+          color: getButtonColor(context),
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: getButtonTextColor(context), width: 2),
+            borderRadius: BorderRadius.circular(10)
+          ),
         ),
       ),
     );
