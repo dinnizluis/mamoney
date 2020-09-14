@@ -1,4 +1,4 @@
-# mamoneyproject
+# mamoney
 
 A new Flutter project.
 

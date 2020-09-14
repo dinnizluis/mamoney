@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mamoneyproject/widgets/buttonmamoney.dart';
+import 'package:mamoney/widgets/buttonmamoney.dart';
 
 void main() {
   testWidgets('Testing app component for button', (WidgetTester tester) async {

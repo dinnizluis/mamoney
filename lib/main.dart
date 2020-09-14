@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mamoneyproject/pages/authentication/signin.dart';
+import 'package:mamoney/pages/authentication/signin.dart';
 
 void main() {
   runApp(MaMoneyApp());

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mamoneyproject/pages/authentication/signin.dart';
+import 'package:mamoney/pages/authentication/signin.dart';
 
 void main() {
   testWidgets('Build login page', (WidgetTester tester) async {
