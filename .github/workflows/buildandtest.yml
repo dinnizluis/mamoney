@@ -16,13 +16,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup Flutter ${{ matrix.flutter-version }}
-      id: flutter
-      if: "!startsWith(matrix.bot, 'dart')"
-      uses: DanTup/gh-actions/setup-flutter@master
-      with:
-        channel: ${{ matrix.flutter-version }}
+    - name: setup-flutter
+    # You may pin to the exact commit or the version.
+    # uses: takuyaohashi/setup-flutter@13485697cd6c4f77aca5364e1bad821fe627ad13
+      uses: takuyaohashi/setup-flutter@v1  
     - name: Install dependencies
-      run: flutter pub get
+      run: pub get
     - name: Run tests
       run: pub run test
