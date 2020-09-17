@@ -7,18 +7,20 @@ class TextFieldMaMoney extends StatelessWidget {
   final String label;
 
   TextFieldMaMoney({
-    Key key, 
+    Key key,
     @required this.label,
-    }) : super(key: key);
+  }) : super(key: key);
 
   InputDecoration getDecoration(String label, BuildContext context) {
     return InputDecoration(
       focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Theme.of(context).primaryColor, width: 3.0),
-        ),
+        borderSide:
+            BorderSide(color: Theme.of(context).primaryColor, width: 3.0),
+      ),
       enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Theme.of(context).primaryColor, width: 3.0),
-          borderRadius: BorderRadius.circular(5.0),
+        borderSide:
+            BorderSide(color: Theme.of(context).primaryColor, width: 3.0),
+        borderRadius: BorderRadius.circular(5.0),
       ),
       hintText: label,
     );
@@ -27,12 +29,9 @@ class TextFieldMaMoney extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Parent(
-      child: Material(
-          child: TextFormField(
-          decoration: getDecoration(label, context)
+        child: Material(
+          child: TextFormField(decoration: getDecoration(label, context)),
         ),
-      ),
-      style: textInputStyle
-    );
+        style: textInputStyle);
   }
 }

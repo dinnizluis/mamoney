@@ -12,13 +12,12 @@ class MaMoneyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MaMoney',
       theme: ThemeData(
-        primaryColor: Color(0xff780444),
-        primaryColorLight: Color(0xffab3f6f),
-        primaryColorDark: Color(0xff47001d),        
-        fontFamily: 'Red Hat Display',
-        brightness: Brightness.light,
-        visualDensity: VisualDensity.adaptivePlatformDensity
-      ),
+          primaryColor: Color(0xff780444),
+          primaryColorLight: Color(0xffab3f6f),
+          primaryColorDark: Color(0xff47001d),
+          fontFamily: 'Red Hat Display',
+          brightness: Brightness.light,
+          visualDensity: VisualDensity.adaptivePlatformDensity),
       home: SignIn(key: Key('loginPage')),
     );
   }

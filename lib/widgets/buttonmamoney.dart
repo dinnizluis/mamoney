@@ -6,11 +6,11 @@ class ButtonMaMoney extends StatelessWidget {
   final Color buttonColor;
 
   ButtonMaMoney({
-    Key key, 
+    Key key,
     @required this.buttonText,
     this.buttonTextColor,
     this.buttonColor,
-    }) : super(key: key);
+  }) : super(key: key);
 
   Color getButtonTextColor(BuildContext context) {
     return buttonTextColor ?? Theme.of(context).primaryColor;
@@ -27,17 +27,14 @@ class ButtonMaMoney extends StatelessWidget {
       child: Material(
         child: RaisedButton(
           onPressed: () => {},
-          child: Text(
-            buttonText, 
-            style: TextStyle(color: getButtonTextColor(context))
-            ), 
+          child: Text(buttonText,
+              style: TextStyle(color: getButtonTextColor(context))),
           color: getButtonColor(context),
           shape: RoundedRectangleBorder(
-            side: BorderSide(color: getButtonTextColor(context), width: 2),
-            borderRadius: BorderRadius.circular(10)
-          ),
+              side: BorderSide(color: getButtonTextColor(context), width: 2),
+              borderRadius: BorderRadius.circular(10)),
         ),
       ),
     );
-  } 
+  }
 }
