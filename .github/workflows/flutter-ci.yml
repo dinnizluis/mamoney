@@ -1,4 +1,4 @@
-name: Flutter CI
+name: Flutter CI - Dev
 
 # This workflow is triggered on pushes to the repository.
 
@@ -40,4 +40,5 @@ jobs:
     - run: flutter test --coverage .
     - uses: codecov/codecov-action@v1.0.2
       with:
-        token: ${{ secrets.CODECOV_TOKEN }} 
+        token: ${{ secrets.CODECOV_TOKEN }}
+    - run: bash <(curl -s https://codecov.io/bash)
