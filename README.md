@@ -1,6 +1,6 @@
 # mamoney
 
-A new Flutter project.
+App for teaching financial edcutacion principles.
 
 ## Getting Started
 
