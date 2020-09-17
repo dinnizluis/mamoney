@@ -1,6 +1,8 @@
 # mamoney
 
-App for teaching financial edcutacion principles.
+APP Purpose: Teach financial edcutacion principles.
+
+Learning goals: QA good practices and flutter practice.
 
 ## Getting Started
 
