@@ -37,7 +37,11 @@ jobs:
 
     # Run widget tests for our flutter project.
     - run: flutter test
-
+    - uses: codecov/codecov-action@v1.0.2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+    - run: bash <(curl -s https://codecov.io/bash)
+      
     # Build apk.
     - run: flutter build apk
 
