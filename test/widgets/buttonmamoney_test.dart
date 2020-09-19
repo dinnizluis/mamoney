@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   testWidgets('Testing app component for button', (WidgetTester tester) async {
+    //Ensure ScreenUtil is initialized
     WidgetsFlutterBinding.ensureInitialized();
     ScreenUtil.init(designSize: Size(750, 1334), allowFontScaling: false);
 

@@ -1,10 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/screenutil.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mamoney/pages/authentication/signin.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   testWidgets('Build login page', (WidgetTester tester) async {
+    //Ensure ScreenUtil is initialized
+    WidgetsFlutterBinding.ensureInitialized();
+    ScreenUtil.init(designSize: Size(750, 1334), allowFontScaling: false);
+
     //Build da tela
     await tester.pumpWidget(MaterialApp(home: SignIn(key: Key('SingInPage'))));
 
