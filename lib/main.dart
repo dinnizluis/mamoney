@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mamoney/pages/authentication/signin.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  ScreenUtil.init(designSize: Size(750, 1334), allowFontScaling: false);
   runApp(MaMoneyApp());
 }
 

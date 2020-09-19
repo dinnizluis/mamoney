@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ButtonMaMoney extends StatelessWidget {
   final String buttonText;
@@ -22,8 +23,8 @@ class ButtonMaMoney extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 140,
+    return Container(
+      width: ScreenUtil().setWidth(140).toDouble(),
       child: Material(
         child: RaisedButton(
           onPressed: () => {},
