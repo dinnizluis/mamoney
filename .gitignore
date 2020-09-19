@@ -7,3 +7,4 @@ doc/api/
 *.ipr
 *.iws
 .idea/
+*.code-workspace
